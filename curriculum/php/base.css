@@ -1,0 +1,303 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+body {
+    line-height:normal;
+}
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+ul {
+    list-style:none;
+}
+blockquote, q {
+    quotes:none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+    text-decoration: none;
+}
+ins {
+    /* background-color:#fff; */
+    color:#000;
+    text-decoration:none;
+}
+mark {
+    /* background-color:#fff; */
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+del {
+    text-decoration: line-through;
+}
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+input, select {
+    vertical-align:middle;
+}
+
+html {scroll-behavior: smooth;}
+/* ・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・ */
+/* ////////////ここから////////////////////////////////////////////////////////// */
+/* 。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。 */
+
+.alert {
+    position: relative;
+    top: 0;
+    z-index: 1;
+    background-color: black;
+    /* width: 100%; */
+    text-align: center;
+    padding: 18px;
+    color: white;
+    font-size: 14px;
+    box-shadow: 5px 5px 5px 680px rgba(180,180,180,0.3);
+}
+
+.alert a{
+    color: white;
+    text-decoration: underline;
+    
+}
+
+/* top */
+.top{
+    position: relative;
+    /* top: -85px; */
+    /* width: 100vw; */
+    height: 680px;
+    object-fit: cover;
+    overflow: hidden;
+    /* margin-bottom: -70px; */
+    /* background-position: center; */
+    /* background-size: cover; */
+    /* background-image: url(./cafe/img/eyecatch.jpg); */
+    /* opacity: 0.9; */
+}
+.top img{
+    height: 680px;
+    width: 100%;
+    /* min-height: 680px; */
+    object-fit: cover;
+}
+
+.concept{
+    width: 90%;
+    margin: auto;
+    position: absolute;
+    top: 250px;
+    left: 5%;
+    color: white;
+    font-size: 64px;
+    line-height: 64px;
+    font-weight: bold;
+}
+
+
+
+/* ////   7つ    ///////////////////// */
+.cafe_intro {
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 40px 0;
+    padding: 0 5%;
+}
+
+.cafe_intro .box{
+    padding: 10px 0;
+}
+.cafe_intro .info{
+    display: flex;
+    justify-content: flex-start;
+}
+
+/* 写真 */
+.cafe_intro .photo{
+    width: 64px;
+    height: 64px;
+}
+.cafe_intro .photo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.cafe_intro .area{
+    font-weight: bold;
+    font-size: 14px;
+}
+.acces{
+    padding: 5px 15px;
+}
+.acces p{
+    font-weight: 900;
+    font-size: 14px;
+}
+
+/* 好きなロケーションを選ぼう */
+.bg_white{
+    padding: 40px 5%;
+    /* margin: 40px 0; */
+}
+.bg_white h2 {
+    font-size: 32px;
+    font-weight: bold;
+}
+.cafe_local{
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 15px;
+}
+.cafe_local .box{
+    padding: 10px 0;
+}
+.cafe_local .photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.cafe_local .text {
+    font-size: 18px;
+    font-weight: bold;
+}
+/* goto eats */
+.goto {
+    margin-top: 40px;
+    opacity: 0.9;
+    position: relative;
+}
+.goto_text {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    background-color: rgba(255,255,255,0.3);
+    padding: 10px;
+}
+.goto img{
+    width: 100%;
+    border-radius: 16px;
+}
+.goto_text h3 {
+    font-size: 42px;
+    font-weight: bold;
+    color: black;
+}
+.goto_text p {
+    font-size: 18px;
+    font-weight: 100;
+    color: black;
+}
+
+/* カフェづくりに挑戦しよう */
+.bg_black {
+    background-color: black;
+    color: white;
+    padding: 40px 5%;
+}
+.bg_black h2 {
+    font-size: 32px;
+    font-weight: bold;
+    padding: 10px 0;
+}
+.bg_black p {
+    font-size: 14px;
+    font-weight: 900;
+}
+.cafe_exp {
+    margin: 15px auto 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 15px;
+}
+.cafe_exp .box {
+    padding: 10px 0;
+}
+.cafe_exp .photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.cafe_exp .text {
+    padding: 5px 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+.cafe_exp p {
+    font-size: 14px;
+    font-weight: 100;
+}
+
+/* ホストに仲間入りしよう */
+.cafe_host {
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 15px;
+}
+.cafe_host .photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* 右下のjump */
+.jump {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    height: 3rem;
+    line-height: 3rem;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    background-color: black;
+    padding: 0 10px;
+    transition: all .3s ease;
+}

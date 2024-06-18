@@ -1,0 +1,61 @@
+@media(max-width:896px){
+    /* hambergar押したときの画面 */
+    .sp_nav_motion {
+        position: relative;
+        top: 65px;
+        /* display: none; */
+    }
+    .sign .sp_nav {
+        box-shadow: 0 10px 25px 0 rgba(100, 100, 100, 0.5);
+    }
+    .sign .sp_signin {
+        color: black;
+        padding: 0 1rem;
+        border-bottom: 1px solid #ccc;
+    }
+    .sign .sp_nav {
+        position: fixed;
+        top: 125px;
+        width: 12.5rem;
+        background-color: white;
+        border-radius: 8px;
+    }
+    .sign .sp_menu {
+        color: black;
+        padding: 0 1rem;
+    }
+    .sign .sp_nav a {
+        color: black;
+        display: block;
+    }
+    /* navを消す */
+    header .nav{
+        display: none;
+    }
+    .logo img{
+        max-width: 45%;
+    }
+    .sign >.signin{
+        display: none;
+    }
+    .humbergar{
+        display: block;
+        padding: 0 0 0 auto;
+    }
+    #signin_box {
+        width: 60%;
+    }
+    /* 7つ */   
+    .cafe_intro {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    /* 好きなロケーションを選ぼう */
+    .cafe_local {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* contact */
+    .contact_box {
+        width: 90%;
+    }
+}

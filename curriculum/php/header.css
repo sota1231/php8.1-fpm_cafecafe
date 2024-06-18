@@ -1,0 +1,295 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+body {
+    line-height:1;
+}
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+ul {
+    list-style:none;
+}
+blockquote, q {
+    quotes:none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+    text-decoration: none;
+}
+ins {
+    background-color:#fff;
+    color:#000;
+    text-decoration:none;
+}
+mark {
+    background-color:#fff;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+del {
+    text-decoration: line-through;
+}
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+input, select {
+    vertical-align:middle;
+}
+/* //////////////////////////////////////////////////////////////////////////////// */
+
+/* //////////////////////ここから////////////////////////////////////////////////// */
+
+.header{
+    width: 90%;
+    padding: 0 5%;
+    padding-top: 15px;
+    margin: 0 auto;
+    background-color: rgba(0,0,0,0);
+    position: absolute;
+    top: 60px;
+    z-index: 2;
+    transition: background-color 0.5s ease;
+}
+.header-container{
+    display: flex;
+}
+/* ヘッダースクロールイベント */
+.motion {
+    background-color: rgba(0,0,0,0.8);
+    width: 90%;
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    transition: background-color 0.5s ease;
+}
+/* ・・・・・・・・・・・・・・・・・・ */
+.logo{
+    padding-top: 5px;
+    flex: 25%;   
+    line-height: 50px;
+    vertical-align: middle;
+}
+.logo img{
+    width: 70%;
+}
+.nav{
+    display: flex;
+    flex: 50%;
+    flex-wrap: wrap;
+    justify-content: center;
+    line-height: 50px;
+}
+header .menu ,.menu a{
+    padding: 0 15px;
+    cursor: pointer;
+    color: white;
+}
+.sign{
+    flex: 25%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:flex-end ;
+    line-height: 50px;
+    color: white;
+}
+.humbergar{
+    display: none;
+}
+.humbergar img{
+    width: 50px;
+    opacity: 0.8;
+}
+
+.overlay {
+    z-index: 998;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+.black{
+    visibility: visible;
+}
+.signin_box {
+    /* display: none; */
+    position: relative;
+    z-index: 999;
+    margin-top: 50vh;
+    opacity: 0;
+    width: 40%;
+    background-color: white;
+    border-radius: 12px;
+    transition: all 0s ease;
+}
+.signin-open{
+    transition: all 0.5s;
+    margin-top: 0px;
+    opacity: 1;
+}
+
+#signin_box h2 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 1rem 0;
+    border-bottom: 1px solid #ccc;
+}
+#signin_box dl {
+    padding: 20px;
+}
+#signin_box dd {
+    padding: 5px 0;
+}
+#signin_box dd input {
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 10px 2.5px;
+    border-radius: 8px;
+    border: 1px solid #aaa;
+}
+#signin_box dd button {
+    color: white;
+    background-color: rgb(215, 4, 102);
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 10px 2.5px;
+    border: 0;
+    border-radius: 8px;
+    cursor: pointer;
+}
+/* sns */
+#signin_box dl.sns {
+    border-width: 90%;
+    border-top: 1px solid #ccc;
+}
+#signin_box .sns dd button {
+    color: black;
+    background-color: white;
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 10px 2.5px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+#signin_box .sns dd img {
+    width: 1.5rem;
+}
+#signin_box .sns dd button {
+    color: black;
+    background-color: white;
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 10px 2.5px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+/* .sp_nav  */
+.sp_nav_motion{
+    display: none;
+}
+.nav-open{
+    display: block;
+}
+._click:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+#sign >.nav-top{
+    position: fixed;
+    top: 65px;
+}
+/* footer */
+
+/* footer */
+.footer {
+    border-top: 1px solid #ddd;
+    background-color: #f7f7f7;
+    padding: 4% 0;
+}
+footer .outer {
+    width: 90%;
+    margin: auto;
+    font-size: 0.9rem;
+}
+footer .nav_area {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+footer .inner {
+    flex: auto;
+}
+footer .inner h2 {
+    font-weight: bold;
+}
+footer .inner li {
+    margin: 1.5rem 0;
+}
+footer .inner a {
+    color: #333;
+}
+footer .reserved {
+    padding-top: 2%;
+    color: #333;
+    border-top: 1px solid #ccc;
+}
+footer .menu span {
+    cursor: pointer;
+    color: #331;
+    box-sizing: border-box;
+}
+.menu{
+    display: flex;
+}
+.menu ._click{
+    display: block;
+    padding: 10px 10px 10px 0;
+    font-size: 1rem;
+}

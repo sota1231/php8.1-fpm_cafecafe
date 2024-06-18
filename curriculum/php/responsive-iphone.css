@@ -1,0 +1,39 @@
+@media (max-width:480px){
+    
+    /* ヘッダー */
+    .logo img{
+        width: 200px;
+        max-width: 100%;
+    }
+    #signin_box {
+        width: 80%;
+    }
+    /* トップ */
+    .concept {
+        font-size: 32px;
+    }
+    /* 7つ */
+    .cafe_intro {
+        display: block;
+    }
+    /* goto */
+    .goto_text {
+        position: static;
+        line-height: normal;
+    }
+    .cafe_exp {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    /* フッター */  
+    footer .nav_area {
+        display: block;
+    }
+    .menu ._click{
+        display: block;
+        padding: 0;
+        font-size: 0.9rem;
+    }
+    .contact_box {
+        width: 98%;
+    }
+}
